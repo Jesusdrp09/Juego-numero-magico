@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(4, 4, 56);
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 25px;
+}
+
+input, select{
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+}
+
+#validar{
+    background-color: #07E05D;
+}
+
+#reiniciar{
+    background-color: #FE0703;
+    margin-top: 2rem;
+}
+
+#niveles{
+    margin-top: 2rem;   
+}

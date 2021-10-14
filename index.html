@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Adivina el número mágico de 1 a 1000</h1>
+    <p id="parrafo"></p>
+    <input type="number" class="numero" id="numero" min="1" max="1000" value="0" disabled> 
+    <input type="button" id="validar" value="validar" disabled><br>
+    <input type="button" id="iniciar" value="iniciar">
+    <input type="button" id="reiniciar" value="reiniciar"><br>
+    <select name="niveles" id="niveles" size="1">
+        <option value="1">Nivel 1</option>
+        <option value="2">Nivel 2</option>
+        <option value="3">Nivel 3</option>
+    </select><br>
+    <p id="tiempo">tiempo restante: </p>
+    <div id="reloj"></div>
+</body>
+<script src="js/codigo.js"></script>
+</html>
