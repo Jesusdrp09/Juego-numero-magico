@@ -113,7 +113,12 @@ function juego() {
                 iniciar.disabled = true;
                 niveles.disabled = true;
                 tiempoP.hidden = true;
-                if(localStorage.getItem(nombre.value).replace("s", "") > (nivel() - tiempo)/1000){
+                console.log();
+                if(localStorage.getItem(nombre.value) != null){
+                    if(localStorage.getItem(nombre.value).replace("s", "") > (nivel() - tiempo)/1000){
+                        localStorage.setItem(nombre.value, `${(nivel() - tiempo)/1000}s`);
+                    }
+                }else{
                     localStorage.setItem(nombre.value, `${(nivel() - tiempo)/1000}s`);
                 }
             }else if(numero.value < numeroAleatorio){
