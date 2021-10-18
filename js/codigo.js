@@ -11,12 +11,12 @@ let regresar = document.getElementById("regresar");
 let contenedor = document.getElementById("contenedor");
 let puntajes = document.getElementById("puntajes");
 let filas = document.getElementById("filas");
+let numeroAleatorio = generarNumero();
 let gana = false;
 var tiempo = 60000;
 
 iniciar.onclick = ()=>{
     if(nombre.value != ""){
-        let numeroAleatorio = generarNumero()
         nombre.setAttribute("style", "border: 0;");
         habilitar();
         juego();
@@ -77,7 +77,7 @@ const nivel = () =>{
     }
 }
 
-const generarNumero = ()=>{
+function generarNumero (){
     let min = 1, max = 1000; 
     return parseInt(Math.random()*max+min);
 }

@@ -10,18 +10,18 @@
 <body>
     <div id="contenedor">
         <h1>Adivina el número mágico de 1 a 1000</h1>
-        <input type="button" value="Puntajes" id="calificaciones">
-        <p id="parrafo"></p>
-        <input type="number" class="numero" id="numero" min="1" max="1000" value="0" disabled> 
-        <input type="button" id="validar" value="validar" disabled><br>
-        <input type="button" id="iniciar" value="iniciar">
-        <input type="button" id="reiniciar" value="reiniciar"><br>
+        <input type="button" value="Puntajes" id="calificaciones"><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
         <select name="niveles" id="niveles" size="1">
             <option value="1">Nivel 1</option>
             <option value="2">Nivel 2</option>
             <option value="3">Nivel 3</option>
         </select><br>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <p id="parrafo"></p>
+        <input type="number" class="numero" id="numero" min="1" max="1000" value="0" disabled> 
+        <input type="button" id="validar" value="validar" disabled><br>
+        <input type="button" id="iniciar" value="iniciar">
+        <input type="button" id="reiniciar" value="reiniciar"><br>
         <p id="tiempo">tiempo restante: </p>
     </div>
     <div id="puntajes" hidden>
