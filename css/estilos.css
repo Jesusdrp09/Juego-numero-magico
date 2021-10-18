@@ -19,6 +19,11 @@ input, select{
     font-size: 30px;
 }
 
+#nombre{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 #validar{
     background-color: #07E05D;
 }
@@ -29,7 +34,7 @@ input, select{
 }
 
 #niveles{
-    margin-top: 2rem;   
+    margin-top: 0;   
 }
 
 #puntajes table td, th{
