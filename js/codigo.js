@@ -6,12 +6,19 @@ let niveles = document.getElementById("niveles");
 let parrafo = document.getElementById("parrafo");
 let tiempoP = document.getElementById("tiempo");
 let numeroAleatorio = parseInt(Math.random()*1000+1);
+let nombre = document.getElementById("nombre");
 let gana = false;
 var tiempo = 60000;
 
 console.log(numeroAleatorio);
 
 iniciar.onclick = ()=>{
+    console.log(nombre.value);
+    console.log(localStorage.getItem(nombre.value));
+    for(i = 0; i < localStorage.length; i++){
+        console.log(localStorage.key(i));
+        console.log(localStorage.getItem(localStorage.key(i)));
+    }
     gana = false;
     tiempoP.hidden = false;
     habilitar();
@@ -68,6 +75,7 @@ function juego() {
                 iniciar.disabled = true;
                 niveles.disabled = true;
                 tiempoP.hidden = true;
+                localStorage.setItem(nombre.value, `${tiempo}`);
             }else if(numero.value < numeroAleatorio){
                 parrafo.innerText = `El numero es mayor`;
             }else if(numero.value > numeroAleatorio){
