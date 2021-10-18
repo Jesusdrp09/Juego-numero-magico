@@ -42,7 +42,7 @@ input, select{
 }
 
 #puntajes table{
-    margin: 10vw 39vw 2vw 39vw;
+    margin: 10vw auto 2vw auto;
     font-size: 2rem;
 }
 
