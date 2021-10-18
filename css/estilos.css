@@ -31,3 +31,32 @@ input, select{
 #niveles{
     margin-top: 2rem;   
 }
+
+#puntajes table td, th{
+    border: 2px solid #C0C0CE;
+    padding: .5rem;
+}
+
+#puntajes table thead{
+    border: 4px solid #C0C0CE;
+}
+
+#puntajes table{
+    margin: 10vw 39vw 2vw 39vw;
+    font-size: 2rem;
+}
+
+#puntajes input{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+#puntajes table caption{
+    color: rgb(190, 189, 189);
+    font-size: 3rem;
+}
+
+#puntajes table{
+    border-collapse: collapse;
+}
