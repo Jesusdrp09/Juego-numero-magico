@@ -7,6 +7,8 @@ body{
 
 h1{
     font-size: 50px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 p{
@@ -64,4 +66,14 @@ input, select{
 
 #puntajes table{
     border-collapse: collapse;
+}
+
+#footer{
+    background-color: white;
+    width: 100.28vw;
+    color: blue;
+    padding: 2px 0;
+    margin-left: -12px;
+    position: absolute;
+    bottom: 0px;
 }
